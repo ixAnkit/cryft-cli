@@ -42,7 +42,6 @@ require (
 	github.com/ProtonMail/go-crypto v1.0.0 // indirect
 	github.com/VictoriaMetrics/fastcache v1.12.1 // indirect
 	github.com/acomagu/bufpipe v1.0.3 // indirect
-	github.com/ixAnkit/cryft-cli v1.8.3 // indirect
 	github.com/ava-labs/icm-contracts v1.0.9-0.20241210181701-a4bd5c92b056 // indirect
 	github.com/ava-labs/icm-services v1.4.1-0.20241210192415-fbb658863e67 // indirect
 	github.com/ava-labs/ledger-avalanche/go v0.0.0-20241009183145-e6f90a8a1a60 // indirect
