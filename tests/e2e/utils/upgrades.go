@@ -3,20 +3,21 @@
 package utils
 
 import (
+	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
 
-	"github.com/MetalBlockchain/metal-cli/pkg/utils"
-	"github.com/MetalBlockchain/subnet-evm/params"
-	"github.com/MetalBlockchain/subnet-evm/rpc"
+	"github.com/ava-labs/avalanche-cli/pkg/constants"
+	"github.com/ava-labs/subnet-evm/params"
+	"github.com/ava-labs/subnet-evm/rpc"
 	"github.com/onsi/gomega"
 )
 
 const chainConfigAPI = "eth_getChainConfig"
 
 func CheckUpgradeIsDeployed(rpcEndpoint string, deployedUpgrades params.UpgradeConfig) error {
-	ctx, cancel := utils.GetAPIContext()
+	ctx, cancel := context.WithTimeout(context.Background(), constants.RequestTimeout)
 	defer cancel()
 
 	rpcClient, err := rpc.DialContext(ctx, rpcEndpoint)

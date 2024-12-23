@@ -7,8 +7,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/MetalBlockchain/metal-cli/internal/testutils"
-	"github.com/MetalBlockchain/subnet-evm/core"
+	"github.com/ava-labs/avalanche-cli/internal/testutils"
+	"github.com/ava-labs/subnet-evm/core"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/stretchr/testify/require"
 )

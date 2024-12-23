@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/MetalBlockchain/metal-cli/internal/testutils"
-	"github.com/MetalBlockchain/metal-cli/pkg/constants"
+	"github.com/ava-labs/avalanche-cli/internal/testutils"
+	"github.com/ava-labs/avalanche-cli/pkg/constants"
 	"github.com/stretchr/testify/require"
 )
 

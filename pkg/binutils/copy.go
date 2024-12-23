@@ -7,7 +7,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/MetalBlockchain/metal-cli/pkg/constants"
+	"github.com/ava-labs/avalanche-cli/pkg/constants"
 )
 
 func CopyFile(src, dest string) error {

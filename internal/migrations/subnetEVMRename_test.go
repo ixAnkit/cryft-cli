@@ -9,13 +9,13 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/MetalBlockchain/metal-cli/pkg/application"
-	"github.com/MetalBlockchain/metal-cli/pkg/config"
-	"github.com/MetalBlockchain/metal-cli/pkg/constants"
-	"github.com/MetalBlockchain/metal-cli/pkg/models"
-	"github.com/MetalBlockchain/metal-cli/pkg/prompts"
-	"github.com/MetalBlockchain/metal-cli/pkg/ux"
-	"github.com/MetalBlockchain/metalgo/utils/logging"
+	"github.com/ava-labs/avalanche-cli/pkg/application"
+	"github.com/ava-labs/avalanche-cli/pkg/config"
+	"github.com/ava-labs/avalanche-cli/pkg/constants"
+	"github.com/ava-labs/avalanche-cli/pkg/models"
+	"github.com/ava-labs/avalanche-cli/pkg/prompts"
+	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/ava-labs/avalanchego/utils/logging"
 	"github.com/stretchr/testify/require"
 )
 
@@ -44,6 +44,14 @@ func TestSubnetEVMRenameMigration(t *testing.T) {
 				VM:   "Subnet-EVM",
 			},
 			expectedVM: "Subnet-EVM",
+		},
+		{
+			name: "Ignore SpacesVM",
+			sc: &models.Sidecar{
+				Name: subnetName,
+				VM:   "SpacesVM",
+			},
+			expectedVM: "SpacesVM",
 		},
 		{
 			name: "Ignore unknown",
