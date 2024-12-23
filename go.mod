@@ -1,4 +1,4 @@
-module github.com/ava-labs/avalanche-cli
+module github.com/ixAnkit/cryft-cli
 
 go 1.18
 
