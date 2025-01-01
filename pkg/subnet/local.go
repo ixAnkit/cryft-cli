@@ -28,7 +28,7 @@ import (
 	anrutils "github.com/ava-labs/avalanche-network-runner/utils"
 	"github.com/ava-labs/avalanchego/ids"
 	"github.com/ava-labs/avalanchego/utils/storage"
-	"github.com/ava-labs/coreth/params"
+	"github.com/cryft-labs/coreth/params"
 	spacesvmchain "github.com/ava-labs/spacesvm/chain"
 	"github.com/ava-labs/subnet-evm/core"
 	"go.uber.org/zap"

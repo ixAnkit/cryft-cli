@@ -17,7 +17,7 @@ import (
 	"github.com/ava-labs/avalanchego/utils/rpc"
 	"github.com/ava-labs/avalanchego/vms/platformvm"
 	"github.com/ava-labs/avalanchego/vms/platformvm/txs"
-	"github.com/ava-labs/coreth/core"
+	"github.com/cryft-labs/coreth/core"
 	"github.com/ava-labs/spacesvm/chain"
 	"github.com/spf13/cobra"
 )
