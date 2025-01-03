@@ -11,8 +11,8 @@ import (
 
 	"github.com/ava-labs/avalanche-cli/pkg/constants"
 	"github.com/ava-labs/avalanche-cli/pkg/ux"
-	"github.com/ava-labs/avalanchego/config"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/cryft-labs/cryftgo/config"
+	"github.com/cryft-labs/cryftgo/utils/logging"
 	"github.com/kardianos/osext"
 	"github.com/shirou/gopsutil/process"
 )

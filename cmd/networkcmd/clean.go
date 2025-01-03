@@ -34,7 +34,7 @@ configuration.`,
 		&hard,
 		"hard",
 		false,
-		"Also clean downloaded avalanchego and plugin binaries",
+		"Also clean downloaded cryftgo and plugin binaries",
 	)
 
 	return cmd
@@ -54,7 +54,7 @@ func clean(*cobra.Command, []string) error {
 	}
 
 	if hard {
-		ux.Logger.PrintToUser("hard clean requested via flag, removing all downloaded avalanchego and plugin binaries")
+		ux.Logger.PrintToUser("hard clean requested via flag, removing all downloaded cryftgo and plugin binaries")
 		binDir := filepath.Join(app.GetBaseDir(), constants.AvalancheCliBinDir)
 		cleanBins(binDir)
 		_ = killAllBackendsByName()

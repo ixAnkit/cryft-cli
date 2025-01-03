@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"github.com/ava-labs/avalanche-cli/internal/mocks"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/vms/platformvm"
+	"github.com/cryft-labs/cryftgo/ids"
+	"github.com/cryft-labs/cryftgo/vms/platformvm"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 )

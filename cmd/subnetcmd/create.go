@@ -165,7 +165,7 @@ func createSubnetConfig(_ *cobra.Command, args []string) error {
 }
 
 func checkInvalidSubnetNames(name string) error {
-	// this is currently exactly the same code as in avalanchego/vms/platformvm/create_chain_tx.go
+	// this is currently exactly the same code as in cryftgo/vms/platformvm/create_chain_tx.go
 	for _, r := range name {
 		if r > unicode.MaxASCII || !(unicode.IsLetter(r) || unicode.IsNumber(r) || r == ' ') {
 			return errIllegalNameCharacter

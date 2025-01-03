@@ -57,7 +57,7 @@ func StartNetwork() string {
 func StartNetworkWithVersion(version string) string {
 	cmdArgs := []string{NetworkCmd, "start"}
 	if version != "" {
-		cmdArgs = append(cmdArgs, "--avalanchego-version", version)
+		cmdArgs = append(cmdArgs, "--cryftgo-version", version)
 	}
 	cmd := exec.Command(CLIBinary, cmdArgs...)
 	output, err := cmd.CombinedOutput()

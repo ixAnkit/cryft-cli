@@ -16,8 +16,8 @@ import (
 	"github.com/ava-labs/avalanche-cli/pkg/ux"
 	ANRclient "github.com/ava-labs/avalanche-network-runner/client"
 	"github.com/ava-labs/avalanche-network-runner/server"
-	"github.com/ava-labs/avalanchego/ids"
 	"github.com/ava-labs/subnet-evm/params"
+	"github.com/cryft-labs/cryftgo/ids"
 	"github.com/spf13/cobra"
 	"go.uber.org/zap"
 )

@@ -5,7 +5,7 @@ go 1.22.10
 require (
 	github.com/ava-labs/apm v1.0.0
 	github.com/ava-labs/avalanche-network-runner v1.8.4-0.20241130135139-a0946c5366be
-	github.com/ava-labs/avalanchego v1.12.1-0.20241210172525-c7ebd8fbae88
+	github.com/cryft-labs/cryftgo v1.0.0-rc
 	github.com/ava-labs/spacesvm v0.0.16-0.20230203183930-edab6c380a0c
 	github.com/ava-labs/subnet-evm v0.6.13-0.20241205165027-6c98da796f35
 	github.com/cryft-labs/coreth v0.1.0-rc

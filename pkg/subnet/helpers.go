@@ -9,11 +9,11 @@ import (
 	"github.com/ava-labs/avalanche-cli/pkg/constants"
 	"github.com/ava-labs/avalanche-cli/pkg/key"
 	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/formatting/address"
-	"github.com/ava-labs/avalanchego/vms/platformvm"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
+	"github.com/cryft-labs/cryftgo/ids"
+	"github.com/cryft-labs/cryftgo/utils/formatting/address"
+	"github.com/cryft-labs/cryftgo/vms/platformvm"
+	"github.com/cryft-labs/cryftgo/vms/platformvm/txs"
+	"github.com/cryft-labs/cryftgo/vms/secp256k1fx"
 )
 
 func GetOwners(network models.Network, subnetID ids.ID) ([]string, uint32, error) {

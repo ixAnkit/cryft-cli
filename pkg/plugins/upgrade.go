@@ -7,7 +7,7 @@ import (
 	"github.com/ava-labs/avalanche-cli/pkg/application"
 	"github.com/ava-labs/avalanche-cli/pkg/models"
 	"github.com/ava-labs/avalanche-cli/pkg/ux"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/cryft-labs/cryftgo/utils/logging"
 )
 
 func ManualUpgrade(app *application.Avalanche, sc models.Sidecar, targetVersion string) error {

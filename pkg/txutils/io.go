@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ava-labs/avalanchego/utils/formatting"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs"
+	"github.com/cryft-labs/cryftgo/utils/formatting"
+	"github.com/cryft-labs/cryftgo/vms/platformvm/txs"
 )
 
 // saves a given [tx] to [txPath]

@@ -298,7 +298,7 @@ func chooseManualOrAutomatic(sc models.Sidecar, targetVersion string, _ string) 
 		choiceAutomatic = "Automatic (Make sure your node isn't running)"
 	)
 	choice, err := app.Prompt.CaptureList(
-		"How would you like to update the avalanchego config?",
+		"How would you like to update the cryftgo config?",
 		[]string{choiceAutomatic, choiceManual},
 	)
 	if err != nil {

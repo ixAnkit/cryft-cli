@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/ava-labs/avalanche-network-runner/rpcpb"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/cryft-labs/cryftgo/utils/logging"
 	"github.com/olekukonko/tablewriter"
 )
 
