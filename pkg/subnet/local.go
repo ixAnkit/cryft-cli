@@ -336,7 +336,6 @@ func (d *LocalDeployer) SetupLocalEnv() (string, error) {
 		return "", fmt.Errorf("evaluated pluginDir to be %s but it does not exist", pluginDir)
 	}
 
-	// TODO: we need some better version management here
 	// * compare latest to local version
 	// * decide if force update or give user choice
 	exists, err = storage.FileExists(avalancheGoBinPath)

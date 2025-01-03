@@ -153,7 +153,6 @@ func StartServerProcess(app *application.Avalanche) error {
 	if err != nil {
 		return err
 	}
-	// TODO: should this be redirected to this app's log file instead?
 	cmd.Stdout = outputFile
 	cmd.Stderr = outputFile
 

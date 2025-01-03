@@ -18,15 +18,36 @@ import (
 	"github.com/ava-labs/subnet-evm/params"
 	"github.com/ethereum/go-ethereum/common"
 )
+type EvmGenesisConfig struct {
+    App                *application.Avalanche
+    SubnetName         string
+    SubnetEVMVersion   string
+    RPCVersion         int
+    SubnetEVMChainID   uint64
+    SubnetEVMTokenSymbol string
+    UseSubnetEVMDefaults bool
+    UseWarp            bool
+}
 
-func CreateEvmSubnetConfig(app *application.Avalanche, subnetName string, genesisPath string, subnetEVMVersion string) ([]byte, *models.Sidecar, error) {
-	var (
+
+type EvmSubnetConfig struct {
+	App                  *application.Avalanche
+	SubnetName           string
+	GenesisPath          string
+	SubnetEVMVersion     string
+	GetRPCVersionFromBinary bool
+	SubnetEVMChainID     uint64
+	SubnetEVMTokenSymbol string
+	UseSubnetEVMDefaults bool
+	UseWarp              bool
+}
+
+func createEvmGenesis(config EvmGenesisConfig) ([]byte, *models.Sidecar, error)	var (
 		genesisBytes []byte
 		sc           *models.Sidecar
 		err          error
 	)
-
-	if genesisPath == "" {
+{	if genesisPath == "" {
 		genesisBytes, sc, err = createEvmGenesis(app, subnetName, subnetEVMVersion)
 		if err != nil {
 			return nil, &models.Sidecar{}, err

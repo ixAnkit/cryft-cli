@@ -349,7 +349,6 @@ var _ = ginkgo.Describe("[Subnet Compatibility]", func() {
 	})
 
 	ginkgo.It("can't deploy conflicting vm versions", func() {
-		// TODO: These shouldn't be hardcoded either
 		subnetEVMVersion1 := "v0.4.2"
 		subnetEVMVersion2 := "v0.4.4"
 

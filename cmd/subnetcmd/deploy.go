@@ -369,7 +369,6 @@ func deploySubnet(_ *cobra.Command, args []string) error {
 	}
 
 	// update sidecar
-	// TODO: need to do something for backwards compatibility?
 	return app.UpdateSidecarNetworks(&sidecar, network, subnetID, blockchainID)
 }
 
@@ -554,7 +553,6 @@ func validateSubnetNameAndGetChains(args []string) ([]string, error) {
 		return nil, fmt.Errorf("subnet name %s is invalid: %w", args[0], err)
 	}
 	// Check subnet exists
-	// TODO create a file that lists chains by subnet for fast querying
 	chains, err := getChainsInSubnet(args[0])
 	if err != nil {
 		return nil, fmt.Errorf("failed to getChainsInSubnet: %w", err)

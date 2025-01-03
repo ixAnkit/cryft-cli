@@ -23,7 +23,6 @@ const (
 
 var _ = ginkgo.Describe("[APM]", func() {
 	ginkgo.BeforeEach(func() {
-		// TODO this is a bit coarse, but I'm not sure a better solution is possible
 		// without modifications to the APM.
 		// More details: https://github.com/ava-labs/avalanche-cli/issues/244
 		utils.RemoveAPMRepo()
@@ -42,7 +41,6 @@ var _ = ginkgo.Describe("[APM]", func() {
 		gomega.Expect(err).Should(gomega.BeNil())
 		utils.DeleteAPMBin(vmid1)
 		utils.DeleteAPMBin(vmid2)
-		// TODO same as above
 		utils.RemoveAPMRepo()
 	})
 

@@ -94,7 +94,6 @@ func ConfigurePerNodeChainConfig(subnetName string, perNodeChainConfigPath strin
 /* #nosec G204 */
 func CreateSpacesVMConfig(subnetName string, genesisPath string) {
 	mapper := utils.NewVersionMapper()
-	// TODO: should we change interfaces here to allow err checking
 	mapping, err := utils.GetVersionMapping(mapper)
 	gomega.Expect(err).Should(gomega.BeNil())
 	CreateSpacesVMConfigWithVersion(subnetName, genesisPath, mapping[utils.Spaces2AvagoKey])

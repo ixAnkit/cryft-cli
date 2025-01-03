@@ -40,7 +40,6 @@ func networkStatus(*cobra.Command, []string) error {
 		return err
 	}
 
-	// TODO: This layout may break some screens, is there a "failsafe" way?
 	if status != nil && status.ClusterInfo != nil {
 		ux.Logger.PrintToUser("Network is Up. Network information:")
 		ux.Logger.PrintToUser("==================================================================================================")
@@ -62,7 +61,6 @@ func networkStatus(*cobra.Command, []string) error {
 		ux.Logger.PrintToUser("No local network running")
 	}
 
-	// TODO: verbose output?
 	// ux.Logger.PrintToUser(status.String())
 
 	return nil

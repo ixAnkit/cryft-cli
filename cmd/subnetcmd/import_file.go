@@ -242,7 +242,7 @@ func importFromAPM() error {
 
 	if len(subnetDescr.VMs) == 0 {
 		return errors.New("no vms found in the given subnet")
-	} else if len(subnetDescr.VMs) == 0 {
+	} else if len(subnetDescr.VMs) =>1 {
 		return errors.New("multiple vm subnets not supported")
 	}
 

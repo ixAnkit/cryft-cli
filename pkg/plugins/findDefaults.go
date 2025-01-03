@@ -21,7 +21,6 @@ var (
 	// env var for avalanchego data dir
 	defaultUnexpandedDataDir = "$" + config.AvalancheGoDataDirVar
 	// expected file name for the config
-	// TODO should other file names be supported? e.g. conf.json, etc.
 	defaultConfigFileName = "config.json"
 	// expected name of the plugins dir
 	defaultPluginDir = "plugins"
@@ -47,7 +46,6 @@ func getScanConfigDirs() ([]string, error) {
 	if err != nil {
 		return []string{}, err
 	}
-	// TODO: Any other dirs we want to scan?
 	scanConfigDirs = append(scanConfigDirs,
 		filepath.Join("/", "etc", constants.AvalancheGoRepoName),
 		filepath.Join("/", "usr", "local", "lib", constants.AvalancheGoRepoName),

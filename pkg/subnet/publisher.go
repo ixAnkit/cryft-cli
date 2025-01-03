@@ -58,7 +58,6 @@ func (p *publisherImpl) Publish(
 	if err != nil {
 		return err
 	}
-	// TODO: This might not always be the right path!
 	subnetPath := filepath.Join(p.repoPath, constants.SubnetDir, subnetName+constants.YAMLSuffix)
 	if err := os.MkdirAll(filepath.Dir(subnetPath), constants.DefaultPerms755); err != nil {
 		return err

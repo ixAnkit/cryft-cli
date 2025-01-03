@@ -144,7 +144,6 @@ func doPublish(sc *models.Sidecar, subnetName string, publisherCreateFunc newPub
 		return err
 	}
 
-	// TODO: Publishing exactly 1 subnet and 1 VM in this iteration
 	tsubnet.VMs = []string{vm.Alias}
 
 	subnetYAML, err := yaml.Marshal(tsubnet)
@@ -199,7 +198,6 @@ func doPublish(sc *models.Sidecar, subnetName string, publisherCreateFunc newPub
 		return err
 	}
 
-	// TODO: if not published? New commit? Etc...
 	if err = publisher.Publish(repo, subnetName, vm.Alias, subnetYAML, vmYAML); err != nil {
 		return err
 	}
@@ -293,7 +291,6 @@ func getNewAlias() (string, error) {
 	return app.Prompt.CaptureString("Provide an alias for the repository we are going to use")
 }
 
-// TODO -- do we want to modify global [repoURL]?
 func getRepoURL(reposDir string) error {
 	if repoURL != "" {
 		return nil
@@ -309,7 +306,6 @@ func getRepoURL(reposDir string) error {
 	// there is a repo already for this alias, let's try to figure out the remote URL from there
 	conf, err := repo.Config()
 	if err != nil {
-		// TODO Would we really want to abort here?
 		return err
 	}
 	remotes := make([]string, len(conf.Remotes))
@@ -475,7 +471,7 @@ func getVMInfo(sc *models.Sidecar) (*types.VM, error) {
 
 	vm := &types.VM{
 		ID:            vmID,
-		Alias:         sc.Networks["Fuji"].BlockchainID.String(), // TODO: Do we have to query for this? Or write to sidecar on create?
+		Alias:         sc.Networks["Fuji"].BlockchainID.String(), 
 		Homepage:      "",
 		Description:   desc,
 		Maintainers:   maintrs,

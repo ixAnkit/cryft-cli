@@ -77,7 +77,6 @@ func (*versionMapper) GetCompatURL(vmType models.VMType) string {
 	case models.SpacesVM:
 		return constants.SpacesVMRPCCompatibilityURL
 	case models.CustomVM:
-		// TODO: unclear yet what we should return here
 		return ""
 	default:
 		return ""
