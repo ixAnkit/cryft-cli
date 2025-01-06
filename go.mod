@@ -5,10 +5,10 @@ go 1.22.10
 require (
 	github.com/ava-labs/apm v1.0.0
 	github.com/ava-labs/avalanche-network-runner v1.8.4-0.20241130135139-a0946c5366be
-	github.com/cryft-labs/cryftgo v1.0.0-rc
 	github.com/ava-labs/spacesvm v0.0.16-0.20230203183930-edab6c380a0c
 	github.com/ava-labs/subnet-evm v0.6.13-0.20241205165027-6c98da796f35
 	github.com/cryft-labs/coreth v0.1.0-rc
+	github.com/cryft-labs/cryftgo v1.0.0-rc
 	github.com/docker/docker v27.4.0+incompatible
 	github.com/ethereum/go-ethereum v1.13.14
 	github.com/go-git/go-git/v5 v5.12.0
@@ -42,7 +42,6 @@ require (
 	github.com/ProtonMail/go-crypto v1.0.0 // indirect
 	github.com/VictoriaMetrics/fastcache v1.12.1 // indirect
 	github.com/acomagu/bufpipe v1.0.3 // indirect
-	github.com/ixAnkit/cryft-cli v1.8.3 // indirect
 	github.com/ava-labs/awm-relayer v1.3.0 // indirect
 	github.com/ava-labs/coreth v0.13.9-rc.1 // indirect
 	github.com/ava-labs/icm-contracts v1.0.9-0.20241210181701-a4bd5c92b056 // indirect
