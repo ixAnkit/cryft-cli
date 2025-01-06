@@ -8,8 +8,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
 	"github.com/cryft-labs/cryftgo/api/info"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
 )
 
 type StatusChecker interface {

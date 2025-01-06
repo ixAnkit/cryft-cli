@@ -15,13 +15,6 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/binutils"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
-	"github.com/ava-labs/avalanche-cli/pkg/vm"
 	"github.com/ava-labs/avalanche-network-runner/client"
 	"github.com/ava-labs/avalanche-network-runner/rpcpb"
 	"github.com/ava-labs/avalanche-network-runner/server"
@@ -31,6 +24,13 @@ import (
 	"github.com/cryft-labs/coreth/params"
 	"github.com/cryft-labs/cryftgo/ids"
 	"github.com/cryft-labs/cryftgo/utils/storage"
+	"github.com/ixAnkit/cryft-cli/pkg/application"
+	"github.com/ixAnkit/cryft-cli/pkg/binutils"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/pkg/models"
+	"github.com/ixAnkit/cryft-cli/pkg/utils"
+	"github.com/ixAnkit/cryft-cli/pkg/ux"
+	"github.com/ixAnkit/cryft-cli/pkg/vm"
 	"go.uber.org/zap"
 )
 
@@ -325,7 +325,7 @@ func (d *LocalDeployer) SetupLocalEnv() (string, error) {
 	}
 
 	pluginDir := d.app.GetPluginsDir()
-	avalancheGoBinPath := filepath.Join(avagoDir, "avalanchego")
+	avalancheGoBinPath := filepath.Join(avagoDir, "cryftgo")
 
 	if err := os.MkdirAll(pluginDir, constants.DefaultPerms755); err != nil {
 		return "", fmt.Errorf("could not create pluginDir %s", pluginDir)

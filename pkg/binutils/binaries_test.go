@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ava-labs/avalanche-cli/internal/testutils"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/internal/testutils"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
 	"github.com/stretchr/testify/require"
 )
 

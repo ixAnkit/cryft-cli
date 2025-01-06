@@ -5,8 +5,8 @@ package models
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
 	avago_constants "github.com/cryft-labs/cryftgo/utils/constants"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
 )
 
 type Network int64

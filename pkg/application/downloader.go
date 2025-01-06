@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
 	"golang.org/x/mod/semver"
 )
 

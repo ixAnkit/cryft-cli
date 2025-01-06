@@ -5,7 +5,7 @@ package networkcmd
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
+	"github.com/ixAnkit/cryft-cli/pkg/application"
 	"github.com/spf13/cobra"
 )
 

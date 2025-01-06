@@ -9,7 +9,7 @@ import (
 const (
 	DefaultPerms755 = 0o755
 
-	BaseDirName = ".avalanche-cli"
+	BaseDirName = ".cryft-cli"
 	LogDir      = "logs"
 
 	ServerRunFile      = "gRPCserver.run"
@@ -48,8 +48,8 @@ const (
 	DefaultSnapshotName          = "default-1654102509"
 	BootstrapSnapshotArchiveName = "bootstrapSnapshot.tar.gz"
 	BootstrapSnapshotLocalPath   = "assets/" + BootstrapSnapshotArchiveName
-	BootstrapSnapshotURL         = "https://github.com/ava-labs/avalanche-cli/raw/main/" + BootstrapSnapshotLocalPath
-	BootstrapSnapshotSHA256URL   = "https://github.com/ava-labs/avalanche-cli/raw/main/assets/sha256sum.txt"
+	BootstrapSnapshotURL         = "https://github.com/ixAnkit/cryft-cli/raw/main/" + BootstrapSnapshotLocalPath
+	BootstrapSnapshotSHA256URL   = "https://github.com/ixAnkit/cryft-cli/raw/main/assets/sha256sum.txt"
 
 	KeyDir     = "key"
 	KeySuffix  = ".pk"
@@ -67,17 +67,17 @@ const (
 	StakingStartLeadTime   = 1 * time.Minute
 	StakingMinimumLeadTime = 25 * time.Second
 
-	DefaultConfigFileName = ".avalanche-cli"
+	DefaultConfigFileName = ".cryft-cli"
 	DefaultConfigFileType = "json"
 
 	CustomVMDir = "vms"
 
-	AvaLabsOrg          = "ava-labs"
-	AvalancheGoRepoName = "avalanchego"
+	AvaLabsOrg          = "ixAnkit"
+	AvalancheGoRepoName = "cryftgo"
 	SubnetEVMRepoName   = "subnet-evm"
 	SpacesVMRepoName    = "spacesvm"
 
-	AvalancheGoInstallDir = "avalanchego"
+	AvalancheGoInstallDir = "cryftgo"
 	SubnetEVMInstallDir   = "subnet-evm"
 	SpacesVMInstallDir    = "spacesvm"
 
@@ -114,7 +114,7 @@ const (
 	BackendCmd                = "avalanche-cli-backend"
 
 	AvalancheGoCompatibilityVersionAdded = "v1.9.2"
-	AvalancheGoCompatibilityURL          = "https://raw.githubusercontent.com/ava-labs/avalanchego/master/version/compatibility.json"
+	AvalancheGoCompatibilityURL          = "https://raw.githubusercontent.com/cryft-labs/cryftgo/master/version/compatibility.json"
 	SubnetEVMRPCCompatibilityURL         = "https://raw.githubusercontent.com/ava-labs/subnet-evm/master/compatibility.json"
 	SpacesVMRPCCompatibilityURL          = "https://raw.githubusercontent.com/ava-labs/spacesvm/master/compatibility.json"
 

@@ -4,11 +4,11 @@
 package vm
 
 import (
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/statemachine"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
 	"github.com/ava-labs/subnet-evm/commontype"
 	"github.com/ava-labs/subnet-evm/params"
+	"github.com/ixAnkit/cryft-cli/pkg/application"
+	"github.com/ixAnkit/cryft-cli/pkg/statemachine"
+	"github.com/ixAnkit/cryft-cli/pkg/ux"
 )
 
 func GetFeeConfig(config params.ChainConfig, app *application.Avalanche) (

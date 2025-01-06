@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
 	"github.com/cryft-labs/cryftgo/utils/logging"
+	"github.com/ixAnkit/cryft-cli/pkg/ux"
 	"github.com/stretchr/testify/require"
 )
 

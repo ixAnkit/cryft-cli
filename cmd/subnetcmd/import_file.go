@@ -9,10 +9,10 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/ava-labs/avalanche-cli/pkg/apmintegration"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/ixAnkit/cryft-cli/pkg/apmintegration"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/pkg/models"
+	"github.com/ixAnkit/cryft-cli/pkg/ux"
 	"github.com/spf13/cobra"
 )
 

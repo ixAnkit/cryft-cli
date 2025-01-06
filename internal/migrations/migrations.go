@@ -5,8 +5,8 @@ package migrations
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/ixAnkit/cryft-cli/pkg/application"
+	"github.com/ixAnkit/cryft-cli/pkg/ux"
 )
 
 type migrationFunc func(*application.Avalanche, *migrationRunner) error
