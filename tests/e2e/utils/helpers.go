@@ -23,19 +23,19 @@ import (
 	"github.com/ava-labs/avalanche-cli/pkg/key"
 	"github.com/ava-labs/avalanche-cli/pkg/models"
 	"github.com/ava-labs/avalanche-network-runner/client"
-	"github.com/ava-labs/avalanchego/api/info"
-	"github.com/ava-labs/avalanchego/ids"
-	avago_constants "github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/utils/crypto/keychain"
-	ledger "github.com/ava-labs/avalanchego/utils/crypto/ledger"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/vms/components/avax"
-	"github.com/ava-labs/avalanchego/vms/platformvm"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
-	"github.com/ava-labs/avalanchego/wallet/subnet/primary"
 	"github.com/ava-labs/spacesvm/chain"
 	spacesvmclient "github.com/ava-labs/spacesvm/client"
 	"github.com/ava-labs/subnet-evm/ethclient"
+	"github.com/cryft-labs/cryftgo/api/info"
+	"github.com/cryft-labs/cryftgo/ids"
+	avago_constants "github.com/cryft-labs/cryftgo/utils/constants"
+	"github.com/cryft-labs/cryftgo/utils/crypto/keychain"
+	ledger "github.com/cryft-labs/cryftgo/utils/crypto/ledger"
+	"github.com/cryft-labs/cryftgo/utils/logging"
+	"github.com/cryft-labs/cryftgo/vms/components/avax"
+	"github.com/cryft-labs/cryftgo/vms/platformvm"
+	"github.com/cryft-labs/cryftgo/vms/secp256k1fx"
+	"github.com/cryft-labs/cryftgo/wallet/subnet/primary"
 	"github.com/ethereum/go-ethereum/crypto"
 )
 
@@ -578,7 +578,7 @@ func GetNodesInfo() (map[string]NodeInfo, error) {
 func GetWhilelistedSubnetsFromConfigFile(configFile string) (string, error) {
 	fileBytes, err := os.ReadFile(configFile)
 	if err != nil && !errors.Is(err, os.ErrNotExist) {
-		return "", fmt.Errorf("failed to load avalanchego config file %s: %w", configFile, err)
+		return "", fmt.Errorf("failed to load cryftgo config file %s: %w", configFile, err)
 	}
 	var avagoConfig map[string]interface{}
 	if err := json.Unmarshal(fileBytes, &avagoConfig); err != nil {

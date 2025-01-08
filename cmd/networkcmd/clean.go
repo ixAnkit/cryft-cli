@@ -34,7 +34,7 @@ configuration.`,
 		&hard,
 		"hard",
 		false,
-		"Also clean downloaded avalanchego and plugin binaries",
+		"Also clean downloaded cryftgo and plugin binaries",
 	)
 
 	return cmd

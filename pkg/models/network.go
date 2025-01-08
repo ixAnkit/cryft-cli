@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	avago_constants "github.com/ava-labs/avalanchego/utils/constants"
+	avago_constants "github.com/cryft-labs/cryftgo/utils/constants"
 )
 
 type Network int64

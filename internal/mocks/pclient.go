@@ -5,19 +5,19 @@ package mocks
 import (
 	context "context"
 
-	api "github.com/ava-labs/avalanchego/api"
+	api "github.com/cryft-labs/cryftgo/api"
 
-	crypto "github.com/ava-labs/avalanchego/utils/crypto"
+	crypto "github.com/cryft-labs/cryftgo/utils/crypto"
 
-	ids "github.com/ava-labs/avalanchego/ids"
+	ids "github.com/cryft-labs/cryftgo/ids"
 
 	mock "github.com/stretchr/testify/mock"
 
-	platformvm "github.com/ava-labs/avalanchego/vms/platformvm"
+	platformvm "github.com/cryft-labs/cryftgo/vms/platformvm"
 
-	rpc "github.com/ava-labs/avalanchego/utils/rpc"
+	rpc "github.com/cryft-labs/cryftgo/utils/rpc"
 
-	status "github.com/ava-labs/avalanchego/vms/platformvm/status"
+	status "github.com/cryft-labs/cryftgo/vms/platformvm/status"
 
 	time "time"
 )

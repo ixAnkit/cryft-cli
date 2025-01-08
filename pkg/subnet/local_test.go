@@ -19,9 +19,9 @@ import (
 	"github.com/ava-labs/avalanche-cli/pkg/ux"
 	"github.com/ava-labs/avalanche-network-runner/client"
 	"github.com/ava-labs/avalanche-network-runner/rpcpb"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/utils/perms"
+	"github.com/cryft-labs/cryftgo/ids"
+	"github.com/cryft-labs/cryftgo/utils/logging"
+	"github.com/cryft-labs/cryftgo/utils/perms"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
@@ -89,7 +89,7 @@ func TestDeployToLocal(t *testing.T) {
 	app := &application.Avalanche{}
 	app.Setup(testDir, logging.NoLog{}, config.New(), prompts.NewPrompter(), application.NewDownloader())
 
-	binDir := filepath.Join(app.GetAvalanchegoBinDir(), "avalanchego-"+avagoVersion)
+	binDir := filepath.Join(app.GetAvalanchegoBinDir(), "cryftgo-"+avagoVersion)
 
 	// create a dummy plugins dir, deploy will check it exists
 	binChecker := &mocks.BinaryChecker{}
@@ -97,7 +97,7 @@ func TestDeployToLocal(t *testing.T) {
 	require.NoError(err)
 
 	// create a dummy avalanchego file, deploy will check it exists
-	f, err := os.Create(filepath.Join(binDir, "avalanchego"))
+	f, err := os.Create(filepath.Join(binDir, "cryftgo"))
 	require.NoError(err)
 	defer func() {
 		_ = f.Close()

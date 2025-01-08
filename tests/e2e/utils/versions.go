@@ -15,7 +15,7 @@ import (
 	"github.com/ava-labs/avalanche-cli/pkg/constants"
 	"github.com/ava-labs/avalanche-cli/pkg/models"
 	"github.com/ava-labs/avalanche-cli/pkg/vm"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/cryft-labs/cryftgo/utils/logging"
 	"go.uber.org/zap"
 	"golang.org/x/mod/semver"
 )
@@ -57,7 +57,7 @@ type versionMapper struct {
 	app *application.Avalanche
 }
 
-// GetLatestAvagoByProtoVersion returns the latest Avalanchego version which
+// GetLatestAvagoByProtoVersion returns the latest cryftgo version which
 // runs with the specified rpcVersion, or an error if it can't be found
 // (or other errors occurred)
 func (*versionMapper) GetLatestAvagoByProtoVersion(app *application.Avalanche, rpcVersion int, url string) (string, error) {
@@ -84,7 +84,7 @@ func (*versionMapper) GetCompatURL(vmType models.VMType) string {
 	}
 }
 
-// GetAvagoURL returns the compatibility URL for Avalanchego
+// GetAvagoURL returns the compatibility URL for cryftgo
 func (*versionMapper) GetAvagoURL() string {
 	return constants.AvalancheGoCompatibilityURL
 }
@@ -166,9 +166,9 @@ func GetVersionMapping(mapper VersionMapper) (map[string]string, error) {
 	sort.Sort(sort.Reverse(sort.IntSlice(rpcs)))
 
 	// iterate the rpc versions
-	// evaluate two avalanchego versions which are consecutive
+	// evaluate two cryftgo versions which are consecutive
 	// and run with the same RPC version.
-	// This is required for the for the "can deploy with multiple avalanchego versions" test
+	// This is required for the for the "can deploy with multiple cryftgo versions" test
 	for _, rpcVersion := range rpcs {
 		versionAsString := strconv.Itoa(rpcVersion)
 		versionsForRPC := avagoCompat[versionAsString]
@@ -202,10 +202,10 @@ func GetVersionMapping(mapper VersionMapper) (map[string]string, error) {
 	// now let's look for subnet-evm versions which are fit for the
 	// "can deploy multiple subnet-evm versions" test.
 	// We need two subnet-evm versions which run the same RPC version,
-	// and then a compatible Avalanchego
+	// and then a compatible cryftgo
 	//
 	// To avoid having to iterate again, we'll also fill the values
-	// for the **latest** compatible Avalanchego and Subnet-EVM
+	// for the **latest** compatible cryftgo and Subnet-EVM
 	for i, ver := range subnetEVMversions {
 		// safety check, should not happen, as we already know
 		// compatible versions exist
@@ -215,7 +215,7 @@ func GetVersionMapping(mapper VersionMapper) (map[string]string, error) {
 		first := ver
 		second := subnetEVMversions[i+1]
 		// we should be able to safely assume that for a given subnet-evm RPC version,
-		// there exists at least one compatible Avalanchego.
+		// there exists at least one compatible cryftgo.
 		// This means we can in any case use this to set the **latest** compatibility
 		soloAvago, err := mapper.GetLatestAvagoByProtoVersion(mapper.GetApp(), subnetEVMmapping[first], mapper.GetAvagoURL())
 		if err != nil {
@@ -236,12 +236,12 @@ func GetVersionMapping(mapper VersionMapper) (map[string]string, error) {
 	}
 
 	// finally let's do the SpacesVM
-	// this is simpler, we just need the latest and its compatible Avalanchego
+	// this is simpler, we just need the latest and its compatible cryftgo
 	spacesVMversions, spacesVMmapping, err := getVersions(mapper, models.SpacesVM)
 	if err != nil {
 		return nil, err
 	}
-	// the assumption is that the latest SpacesVM ALWAYS has a compatible avalanchego already
+	// the assumption is that the latest SpacesVM ALWAYS has a compatible cryftgo already
 	latest := spacesVMversions[0]
 	rpc := spacesVMmapping[latest]
 	avago, err := mapper.GetLatestAvagoByProtoVersion(mapper.GetApp(), rpc, mapper.GetAvagoURL())
@@ -307,7 +307,7 @@ func getCompatibility(mapper VersionMapper, vmType models.VMType) (models.VMComp
 	return parsedCompat, nil
 }
 
-// getAvagoCompatibility returns the compatibility for Avalanchego
+// getAvagoCompatibility returns the compatibility for cryftgo
 func getAvagoCompatibility(mapper VersionMapper) (models.AvagoCompatiblity, error) {
 	avagoBytes, err := mapper.GetApp().GetDownloader().Download(mapper.GetAvagoURL())
 	if err != nil {

@@ -18,7 +18,7 @@ import (
 )
 
 const (
-	avalanchegoBin = "avalanchego"
+	avalanchegoBin = "cryftgo"
 	pluginDirName  = "plugins"
 	evmBin         = "evm"
 	buildDirName   = "build"
@@ -26,7 +26,7 @@ const (
 	readme         = "README.md"
 	license        = "LICENSE"
 
-	avalanchegoBinPrefix = "avalanchego-"
+	avalanchegoBinPrefix = "cryftgo-"
 
 	avagoTar     = "/tmp/avago.tar.gz"
 	avagoZip     = "/tmp/avago.zip"

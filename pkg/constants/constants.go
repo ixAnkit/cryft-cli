@@ -9,7 +9,7 @@ import (
 const (
 	DefaultPerms755 = 0o755
 
-	BaseDirName = ".avalanche-cli"
+	BaseDirName = ".cryft-cli"
 	LogDir      = "logs"
 
 	ServerRunFile      = "gRPCserver.run"
@@ -114,7 +114,7 @@ const (
 	BackendCmd                = "avalanche-cli-backend"
 
 	AvalancheGoCompatibilityVersionAdded = "v1.9.2"
-	AvalancheGoCompatibilityURL          = "https://raw.githubusercontent.com/ava-labs/avalanchego/master/version/compatibility.json"
+	AvalancheGoCompatibilityURL          = "https://raw.githubusercontent.com/cryft-labs/cryftgo/master/version/compatibility.json"
 	SubnetEVMRPCCompatibilityURL         = "https://raw.githubusercontent.com/ava-labs/subnet-evm/master/compatibility.json"
 	SpacesVMRPCCompatibilityURL          = "https://raw.githubusercontent.com/ava-labs/spacesvm/master/compatibility.json"
 

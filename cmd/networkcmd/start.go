@@ -36,7 +36,7 @@ already running.`,
 		SilenceUsage: true,
 	}
 
-	cmd.Flags().StringVar(&avagoVersion, "avalanchego-version", "latest", "use this version of avalanchego (ex: v1.17.12)")
+	cmd.Flags().StringVar(&avagoVersion, "cryftgo-version", "latest", "use this version of cryftgo (ex: v1.17.12)")
 	cmd.Flags().StringVar(&snapshotName, "snapshot-name", constants.DefaultSnapshotName, "name of snapshot to use to start the network from")
 
 	return cmd

@@ -52,7 +52,7 @@ func (avalancheGoDownloader) GetDownloadURL(version string, installer Installer)
 	switch goos {
 	case linux:
 		avalanchegoURL = fmt.Sprintf(
-			"https://github.com/%s/%s/releases/download/%s/avalanchego-linux-%s-%s.tar.gz",
+			"https://github.com/%s/%s/releases/download/%s/cryftgo-linux-%s-%s.tar.gz",
 			constants.AvaLabsOrg,
 			constants.AvalancheGoRepoName,
 			version,
@@ -62,7 +62,7 @@ func (avalancheGoDownloader) GetDownloadURL(version string, installer Installer)
 		ext = tarExtension
 	case darwin:
 		avalanchegoURL = fmt.Sprintf(
-			"https://github.com/%s/%s/releases/download/%s/avalanchego-macos-%s.zip",
+			"https://github.com/%s/%s/releases/download/%s/cryftgo-macos-%s.zip",
 			constants.AvaLabsOrg,
 			constants.AvalancheGoRepoName,
 			version,
@@ -72,7 +72,7 @@ func (avalancheGoDownloader) GetDownloadURL(version string, installer Installer)
 		// EXPERMENTAL WIN, no support
 	case windows:
 		avalanchegoURL = fmt.Sprintf(
-			"https://github.com/%s/%s/releases/download/%s/avalanchego-win-%s-experimental.zip",
+			"https://github.com/%s/%s/releases/download/%s/cryftgo-win-%s-experimental.zip",
 			constants.AvaLabsOrg,
 			constants.AvalancheGoRepoName,
 			version,

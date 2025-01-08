@@ -26,11 +26,11 @@ import (
 	"github.com/ava-labs/avalanche-network-runner/rpcpb"
 	"github.com/ava-labs/avalanche-network-runner/server"
 	anrutils "github.com/ava-labs/avalanche-network-runner/utils"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/storage"
 	"github.com/ava-labs/coreth/params"
 	spacesvmchain "github.com/ava-labs/spacesvm/chain"
 	"github.com/ava-labs/subnet-evm/core"
+	"github.com/cryft-labs/cryftgo/ids"
+	"github.com/cryft-labs/cryftgo/utils/storage"
 	"go.uber.org/zap"
 )
 
@@ -325,7 +325,7 @@ func (d *LocalDeployer) SetupLocalEnv() (string, error) {
 	}
 
 	pluginDir := d.app.GetPluginsDir()
-	avalancheGoBinPath := filepath.Join(avagoDir, "avalanchego")
+	avalancheGoBinPath := filepath.Join(avagoDir, "cryftgo")
 
 	if err := os.MkdirAll(pluginDir, constants.DefaultPerms755); err != nil {
 		return "", fmt.Errorf("could not create pluginDir %s", pluginDir)

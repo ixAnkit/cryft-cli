@@ -7,11 +7,11 @@ import (
 
 	"github.com/ava-labs/avalanche-cli/pkg/models"
 	"github.com/ava-labs/avalanche-cli/pkg/subnet"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/crypto"
-	"github.com/ava-labs/avalanchego/vms/components/verify"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
+	"github.com/cryft-labs/cryftgo/ids"
+	"github.com/cryft-labs/cryftgo/utils/crypto"
+	"github.com/cryft-labs/cryftgo/vms/components/verify"
+	"github.com/cryft-labs/cryftgo/vms/platformvm/txs"
+	"github.com/cryft-labs/cryftgo/vms/secp256k1fx"
 )
 
 // get all subnet auth addresses that are required to sign a given tx
