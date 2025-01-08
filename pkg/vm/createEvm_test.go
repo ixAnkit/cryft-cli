@@ -7,9 +7,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ava-labs/avalanche-cli/internal/testutils"
 	"github.com/ava-labs/subnet-evm/core"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/ixAnkit/cryft-cli/internal/testutils"
 	"github.com/stretchr/testify/require"
 )
 

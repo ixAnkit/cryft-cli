@@ -12,11 +12,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
 	"github.com/cryft-labs/cryftgo/ids"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/pkg/models"
+	"github.com/ixAnkit/cryft-cli/pkg/ux"
 	"github.com/manifoldco/promptui"
 	"golang.org/x/mod/semver"
 )

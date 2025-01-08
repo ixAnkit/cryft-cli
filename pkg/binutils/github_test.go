@@ -7,8 +7,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/ava-labs/avalanche-cli/internal/mocks"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/internal/mocks"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
 	"github.com/stretchr/testify/require"
 )
 

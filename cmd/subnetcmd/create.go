@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"unicode"
 
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
-	"github.com/ava-labs/avalanche-cli/pkg/vm"
+	"github.com/ixAnkit/cryft-cli/pkg/models"
+	"github.com/ixAnkit/cryft-cli/pkg/ux"
+	"github.com/ixAnkit/cryft-cli/pkg/vm"
 	"github.com/spf13/cobra"
 	"golang.org/x/mod/semver"
 )

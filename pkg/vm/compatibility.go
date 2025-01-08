@@ -8,10 +8,10 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/binutils"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
+	"github.com/ixAnkit/cryft-cli/pkg/application"
+	"github.com/ixAnkit/cryft-cli/pkg/binutils"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/pkg/models"
 	"golang.org/x/mod/semver"
 )
 

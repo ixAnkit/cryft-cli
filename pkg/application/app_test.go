@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
 	"github.com/cryft-labs/cryftgo/ids"
 	"github.com/cryft-labs/cryftgo/utils/logging"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/pkg/models"
 	"github.com/stretchr/testify/require"
 )
 

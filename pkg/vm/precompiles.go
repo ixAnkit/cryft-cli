@@ -7,12 +7,12 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/prompts"
-	"github.com/ava-labs/avalanche-cli/pkg/statemachine"
 	"github.com/ava-labs/subnet-evm/params"
 	"github.com/ava-labs/subnet-evm/precompile"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/ixAnkit/cryft-cli/pkg/application"
+	"github.com/ixAnkit/cryft-cli/pkg/prompts"
+	"github.com/ixAnkit/cryft-cli/pkg/statemachine"
 )
 
 type Precompile string

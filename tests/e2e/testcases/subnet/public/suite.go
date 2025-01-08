@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ava-labs/avalanche-cli/tests/e2e/commands"
-	"github.com/ava-labs/avalanche-cli/tests/e2e/utils"
 	"github.com/cryft-labs/cryftgo/utils/logging"
+	"github.com/ixAnkit/cryft-cli/tests/e2e/commands"
+	"github.com/ixAnkit/cryft-cli/tests/e2e/utils"
 	ginkgo "github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 )

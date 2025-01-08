@@ -4,8 +4,8 @@
 package binutils
 
 import (
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/pkg/application"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
 )
 
 func SetupAvalanchego(app *application.Avalanche, avagoVersion string) (string, error) {

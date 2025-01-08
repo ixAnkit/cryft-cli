@@ -7,9 +7,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/pkg/utils"
+	"github.com/ixAnkit/cryft-cli/pkg/ux"
 	"github.com/spf13/cobra"
 )
 

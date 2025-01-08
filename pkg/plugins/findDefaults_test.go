@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
 	"github.com/cryft-labs/cryftgo/config"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
 	"github.com/stretchr/testify/require"
 )
 

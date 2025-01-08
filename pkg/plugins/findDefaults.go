@@ -9,10 +9,10 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
 	"github.com/cryft-labs/cryftgo/config"
 	"github.com/cryft-labs/cryftgo/utils/logging"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/pkg/ux"
 	"github.com/kardianos/osext"
 	"github.com/shirou/gopsutil/process"
 )

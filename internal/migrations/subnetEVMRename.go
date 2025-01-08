@@ -7,8 +7,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
+	"github.com/ixAnkit/cryft-cli/pkg/application"
+	"github.com/ixAnkit/cryft-cli/pkg/models"
 )
 
 const oldSubnetEVM = "SubnetEVM"

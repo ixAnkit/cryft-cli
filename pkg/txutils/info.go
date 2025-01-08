@@ -5,8 +5,8 @@ package txutils
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanche-cli/pkg/models"
 	"github.com/cryft-labs/cryftgo/vms/platformvm/txs"
+	"github.com/ixAnkit/cryft-cli/pkg/models"
 )
 
 // get network model associated to tx

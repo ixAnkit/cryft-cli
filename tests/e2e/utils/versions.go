@@ -10,12 +10,12 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/binutils"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/vm"
 	"github.com/cryft-labs/cryftgo/utils/logging"
+	"github.com/ixAnkit/cryft-cli/pkg/application"
+	"github.com/ixAnkit/cryft-cli/pkg/binutils"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/pkg/models"
+	"github.com/ixAnkit/cryft-cli/pkg/vm"
 	"go.uber.org/zap"
 	"golang.org/x/mod/semver"
 )

@@ -6,13 +6,13 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/avalanche-cli/pkg/binutils"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/plugins"
-	"github.com/ava-labs/avalanche-cli/pkg/subnet"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
-	"github.com/ava-labs/avalanche-cli/pkg/vm"
+	"github.com/ixAnkit/cryft-cli/pkg/binutils"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/pkg/models"
+	"github.com/ixAnkit/cryft-cli/pkg/plugins"
+	"github.com/ixAnkit/cryft-cli/pkg/subnet"
+	"github.com/ixAnkit/cryft-cli/pkg/ux"
+	"github.com/ixAnkit/cryft-cli/pkg/vm"
 	"github.com/spf13/cobra"
 )
 

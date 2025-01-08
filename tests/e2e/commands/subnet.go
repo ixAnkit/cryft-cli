@@ -11,9 +11,9 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/tests/e2e/utils"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/pkg/models"
+	"github.com/ixAnkit/cryft-cli/tests/e2e/utils"
 	"github.com/onsi/gomega"
 )
 

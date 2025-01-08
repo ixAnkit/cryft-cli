@@ -9,11 +9,11 @@ import (
 	"testing"
 
 	"github.com/ava-labs/apm/types"
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/prompts"
 	"github.com/cryft-labs/cryftgo/utils/logging"
 	"github.com/cryft-labs/cryftgo/version"
+	"github.com/ixAnkit/cryft-cli/pkg/application"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
+	"github.com/ixAnkit/cryft-cli/pkg/prompts"
 	"github.com/stretchr/testify/require"
 )
 

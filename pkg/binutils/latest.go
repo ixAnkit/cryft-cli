@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
 	"github.com/cryft-labs/cryftgo/utils/logging"
 	"github.com/cryft-labs/cryftgo/utils/perms"
+	"github.com/ixAnkit/cryft-cli/pkg/constants"
 	"go.uber.org/zap"
 )
 

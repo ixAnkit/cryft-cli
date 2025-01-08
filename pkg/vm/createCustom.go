@@ -5,9 +5,9 @@ package vm
 import (
 	"os"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/ixAnkit/cryft-cli/pkg/application"
+	"github.com/ixAnkit/cryft-cli/pkg/models"
+	"github.com/ixAnkit/cryft-cli/pkg/ux"
 )
 
 func CreateCustomSubnetConfig(app *application.Avalanche, subnetName string, genesisPath, vmPath string) ([]byte, *models.Sidecar, error) {
